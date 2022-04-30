@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C4D0D9F281D0FEE009C2F90 /* PostPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D0D9E281D0FEE009C2F90 /* PostPage.swift */; };
+		2C520C4D2814DA0E009F1693 /* NewUsersPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C520C4C2814DA0E009F1693 /* NewUsersPage.swift */; };
+		2C520C4F281585F7009F1693 /* SettingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C520C4E281585F7009F1693 /* SettingPage.swift */; };
+		2C5B0290281BD7D8005171E7 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B028F281BD7D8005171E7 /* ImagePicker.swift */; };
 		2C5E0551281423FE00C50908 /* OgiriSNSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5E0550281423FE00C50908 /* OgiriSNSApp.swift */; };
 		2C5E0553281423FE00C50908 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5E0552281423FE00C50908 /* ContentView.swift */; };
 		2C5E0555281423FF00C50908 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C5E0554281423FF00C50908 /* Assets.xcassets */; };
 		2C5E0558281423FF00C50908 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C5E0557281423FF00C50908 /* Preview Assets.xcassets */; };
+		2C5E0560281427BE00C50908 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5E055F281427BE00C50908 /* HomePage.swift */; };
+		2C5E0562281427E700C50908 /* HotLaughterPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5E0561281427E700C50908 /* HotLaughterPage.swift */; };
+		2C5E05642814346B00C50908 /* RankingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5E05632814346B00C50908 /* RankingPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C4D0D9E281D0FEE009C2F90 /* PostPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPage.swift; sourceTree = "<group>"; };
+		2C520C4C2814DA0E009F1693 /* NewUsersPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUsersPage.swift; sourceTree = "<group>"; };
+		2C520C4E281585F7009F1693 /* SettingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPage.swift; sourceTree = "<group>"; };
+		2C5B028F281BD7D8005171E7 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		2C5E054D281423FE00C50908 /* OgiriSNS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OgiriSNS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C5E0550281423FE00C50908 /* OgiriSNSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OgiriSNSApp.swift; sourceTree = "<group>"; };
 		2C5E0552281423FE00C50908 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2C5E0554281423FF00C50908 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C5E0557281423FF00C50908 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2C5E055F281427BE00C50908 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		2C5E0561281427E700C50908 /* HotLaughterPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotLaughterPage.swift; sourceTree = "<group>"; };
+		2C5E05632814346B00C50908 /* RankingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +46,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C4D0DA0281D0FF8009C2F90 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				2C4D0D9E281D0FEE009C2F90 /* PostPage.swift */,
+				2C520C4E281585F7009F1693 /* SettingPage.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		2C4D0DA1281D101A009C2F90 /* TabPage */ = {
+			isa = PBXGroup;
+			children = (
+				2C5E055F281427BE00C50908 /* HomePage.swift */,
+				2C5E05632814346B00C50908 /* RankingPage.swift */,
+				2C520C4C2814DA0E009F1693 /* NewUsersPage.swift */,
+				2C5E0561281427E700C50908 /* HotLaughterPage.swift */,
+			);
+			path = TabPage;
+			sourceTree = "<group>";
+		};
+		2C5B028E281BD78D005171E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2C5B028F281BD7D8005171E7 /* ImagePicker.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		2C5E0544281423FE00C50908 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +93,9 @@
 		2C5E054F281423FE00C50908 /* OgiriSNS */ = {
 			isa = PBXGroup;
 			children = (
+				2C5B028E281BD78D005171E7 /* Models */,
+				2C5E055E2814266700C50908 /* View */,
 				2C5E0550281423FE00C50908 /* OgiriSNSApp.swift */,
-				2C5E0552281423FE00C50908 /* ContentView.swift */,
 				2C5E0554281423FF00C50908 /* Assets.xcassets */,
 				2C5E0556281423FF00C50908 /* Preview Content */,
 			);
@@ -65,6 +108,16 @@
 				2C5E0557281423FF00C50908 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2C5E055E2814266700C50908 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C4D0DA1281D101A009C2F90 /* TabPage */,
+				2C4D0DA0281D0FF8009C2F90 /* Modal */,
+				2C5E0552281423FE00C50908 /* ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +190,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C5E0562281427E700C50908 /* HotLaughterPage.swift in Sources */,
+				2C520C4F281585F7009F1693 /* SettingPage.swift in Sources */,
+				2C5E05642814346B00C50908 /* RankingPage.swift in Sources */,
+				2C520C4D2814DA0E009F1693 /* NewUsersPage.swift in Sources */,
 				2C5E0553281423FE00C50908 /* ContentView.swift in Sources */,
+				2C5B0290281BD7D8005171E7 /* ImagePicker.swift in Sources */,
+				2C5E0560281427BE00C50908 /* HomePage.swift in Sources */,
 				2C5E0551281423FE00C50908 /* OgiriSNSApp.swift in Sources */,
+				2C4D0D9F281D0FEE009C2F90 /* PostPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
