@@ -14,19 +14,23 @@ struct ContentView: View {
         TabView{
             HomePage() //1枚目の子ビュー
                 .tabItem {
-                    Image(systemName: "1.circle.fill")
+                    Image(systemName: "note.text")
+                    Text("お題")
                 }
             HotLaughterPage() //2枚目の子ビュー
                 .tabItem {
-                    Image(systemName: "2.circle.fill")
+                    Image(systemName: "flame.fill")
+                    Text("週間お題イベント")
                 }
             RankingPage() //3枚目の子ビュー
                 .tabItem {
-                    Image(systemName: "3.circle.fill")
+                    Image(systemName: "crown.fill")
+                    Text("ランキング")
                 }
             NewUsersPage() //3枚目の子ビュー
                 .tabItem {
-                    Image(systemName: "4.circle.fill")
+                    Image(systemName: "person.fill")
+                    Text("新しいユーザー")
                 }
         }
     }

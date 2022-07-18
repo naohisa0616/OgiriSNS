@@ -13,7 +13,8 @@ struct HomePage: View {
         "Apple 🍎", "Orange 🍊", "Banana 🍌", "Grape 🍇", "strawberry 🍓"
     ]
     
-    @State private var showingModal = false
+    @State private var profielModal = false
+    @State private var postModal = false
     
     var body: some View {
         NavigationView {
@@ -44,7 +45,7 @@ struct HomePage: View {
             // ButtonをViewの下方に配置
             Spacer()
             HStack {
-                Button(action: { print("PersonButtonを押下");self.showingModal.toggle()}) {
+                Button(action: { print("PersonButtonを押下");self.profielModal.toggle()}) {
                     // Buttonのデザインを作成。Personを配置。
                     Image(systemName: "person.fill")
                     // Fontサイズ
@@ -61,14 +62,14 @@ struct HomePage: View {
                         .shadow(color: .gray, radius: 3, x: 3, y: 3)
                     // Buttonの端からViewの端までの距離
                         .padding(EdgeInsets(top: 0, leading: 20, bottom: 16.0, trailing: 0))
-                }.sheet(isPresented: $showingModal) {
+                }.sheet(isPresented: $profielModal) {
                     SettingPage()
                 }
                 // Viewの右方に配置
                 Spacer()
                 Button(action: {
                     // ボタンを押した時のアクションを記載
-                    print("PlusButtonを押下")
+                    print("PlusButtonを押下");self.postModal.toggle()
                 }) {
                     // Buttonのデザインを作成。記号の"+"を配置。
                     Image(systemName: "plus.circle.fill")
@@ -86,6 +87,8 @@ struct HomePage: View {
                         .shadow(color: .gray, radius: 3, x: 3, y: 3)
                         // Buttonの端からViewの端までの距離
                         .padding(EdgeInsets(top: 0, leading: 0, bottom: 16.0, trailing: 20))
+                }.sheet(isPresented: $postModal) {
+                    PostPage()
                 }
             }
         }

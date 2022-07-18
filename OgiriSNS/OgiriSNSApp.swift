@@ -11,7 +11,7 @@ import SwiftUI
 struct OgiriSNSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView(viewModel: LoginViewModel())
         }
     }
 }
