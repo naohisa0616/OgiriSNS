@@ -22,34 +22,40 @@ struct LoginView: View {
     }
     
     var body: some View {
-        VStack {
-            Text("大喜利SNS Login")
-                .padding()
-            Text("ユーザーID")
-                .padding()
-            TextField("メールアドレスを入力してください",text: $viewModel.id)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
-            Text("パスワード")
-                .padding()
-            SecureField("パスワードを入力してください",text:$viewModel.password)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
-            Button(action: {
-                 // ボタンが選択されたことをLoginViewModelの変数isLoginButtonTappedに通知
-                viewModel.isLoginButtonTapped = true
-            }) {
-                HStack {
-                    Image(systemName: "arrowtriangle.forward.fill")
-                    Text("ログイン")
+        NavigationView{
+            VStack {
+                Text("大喜利SNS Login")
+                    .padding()
+                Text("ユーザーID")
+                    .padding()
+                TextField("メールアドレスを入力してください",text: $viewModel.id)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
+                Text("パスワード")
+                    .padding()
+                SecureField("パスワードを入力してください",text:$viewModel.password)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
+                Button(action: {
+                    // ボタンが選択されたことをLoginViewModelの変数isLoginButtonTappedに通知
+                    viewModel.isLoginButtonTapped = true
+                }) {
+                    HStack {
+                        Image(systemName: "arrowtriangle.forward.fill")
+                        Text("ログイン")
+                    }
+                }
+                .padding(30)
+                // ボタンの有効/無効状態に合わせて背景の色を変更
+                .background(viewModel.isValidId && viewModel.isValidPassword ? Color.black : Color.gray)
+                .cornerRadius(10, antialiased: true)
+                // IDとパスワードがどちらも半角英数で入力されていればボタンを有効にする
+                .disabled(!viewModel.isValidId || !viewModel.isValidPassword)
+                NavigationLink(destination: NewLogin(),
+                               isActive: $viewModel.isLoginButtonTapped){
+                    EmptyView()
                 }
             }
-            .padding(30)
-            // ボタンの有効/無効状態に合わせて背景の色を変更
-            .background(viewModel.isValidId && viewModel.isValidPassword ? Color.black : Color.gray)
-            .cornerRadius(10, antialiased: true)
-            // IDとパスワードがどちらも半角英数で入力されていればボタンを有効にする
-            .disabled(!viewModel.isValidId || !viewModel.isValidPassword)
         }
     }
 }
