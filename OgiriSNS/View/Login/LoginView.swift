@@ -1,10 +1,3 @@
-//
-//  LoginView.swift
-//  OgiriSNS
-//
-//  Created by 宮崎直久 on 2022/05/22.
-//
-
 import SwiftUI
 import Firebase
 import FirebaseAuth
@@ -24,6 +17,9 @@ struct LoginView: View {
     var body: some View {
         NavigationView{
             VStack {
+                NavigationLink(isActive: $transitionToHomeScreen,
+                destination:{ ContentView()},
+                label: {EmptyView()})
                 Text("大喜利SNS Login")
                     .padding()
                 Text("ユーザーID")
@@ -39,6 +35,7 @@ struct LoginView: View {
                 Button(action: {
                     // ボタンが選択されたことをLoginViewModelの変数isLoginButtonTappedに通知
                     viewModel.isLoginButtonTapped = true
+                    transitionToHomeScreen = true
                 }) {
                     HStack {
                         Image(systemName: "arrowtriangle.forward.fill")

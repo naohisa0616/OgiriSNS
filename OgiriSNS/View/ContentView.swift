@@ -27,7 +27,7 @@ struct ContentView: View {
                     Image(systemName: "crown.fill")
                     Text("ランキング")
                 }
-            NewUsersPage() //3枚目の子ビュー
+            NewUsersPage() //4枚目の子ビュー
                 .tabItem {
                     Image(systemName: "person.fill")
                     Text("新しいユーザー")
