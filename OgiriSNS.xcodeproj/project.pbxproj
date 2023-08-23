@@ -28,7 +28,7 @@
 		2C6391AC2827471600D4E964 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 2C6391AB2827471600D4E964 /* FirebaseFirestore */; };
 		2C6391AE2827471600D4E964 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2C6391AD2827471600D4E964 /* FirebaseFirestoreSwift */; };
 		2C65FF9E28226CB500FBCC96 /* PostSentencePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C65FF9D28226CB500FBCC96 /* PostSentencePage.swift */; };
-		2C8E4C732913B891008858D4 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E4C722913B891008858D4 /* SignUpModel.swift */; };
+		2C8E4C732913B891008858D4 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E4C722913B891008858D4 /* LoginModel.swift */; };
 		2CC9FAD828B203A700A8F461 /* NewLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC9FAD728B203A700A8F461 /* NewLogin.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +51,7 @@
 		2C615C2728425CC600861D12 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		2C6391A22827463700D4E964 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2C65FF9D28226CB500FBCC96 /* PostSentencePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSentencePage.swift; sourceTree = "<group>"; };
-		2C8E4C722913B891008858D4 /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		2C8E4C722913B891008858D4 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		2CC9FAD728B203A700A8F461 /* NewLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLogin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				2C5B028F281BD7D8005171E7 /* ImagePicker.swift */,
-				2C8E4C722913B891008858D4 /* SignUpModel.swift */,
+				2C8E4C722913B891008858D4 /* LoginModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -270,7 +270,7 @@
 				2C615C2828425CC600861D12 /* LoginViewModel.swift in Sources */,
 				2C5E0551281423FE00C50908 /* OgiriSNSApp.swift in Sources */,
 				2C54AA20283A046300F3727E /* LoginView.swift in Sources */,
-				2C8E4C732913B891008858D4 /* SignUpModel.swift in Sources */,
+				2C8E4C732913B891008858D4 /* LoginModel.swift in Sources */,
 				2C4D0D9F281D0FEE009C2F90 /* PostPage.swift in Sources */,
 				2C54AA23283A0E0000F3727E /* SceneDelegate.swift in Sources */,
 			);
